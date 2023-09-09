@@ -103,3 +103,51 @@ void Problem2()
 	IntPtr = nullptr;
 	delete[] IntPtr;
 }
+
+int Problem3()
+{
+	int PositiveInteger, Answer = 0;
+
+	bool bOnLoop = true;
+	while (bOnLoop)
+	{
+		std::cout << "양의 정수: ";
+		std::cin >> PositiveInteger;
+		if (!std::cin)
+		{
+			std::cin.clear();
+			std::cin.ignore(INT_MAX, '\n');
+			::system("cls");
+		}
+
+		const bool bCheckedPositiveInteger = (PositiveInteger >= 1) && (PositiveInteger <= 100);
+		if (bCheckedPositiveInteger)
+		{
+			bOnLoop = false;
+		}
+		else
+		{
+			::system("cls");
+		}
+	}
+
+	// 홀수, 짝수 판단 후 합 또는 제곱합 계산
+	if (PositiveInteger % 2 == 1)
+	{
+
+		for (int i = 1; i <= PositiveInteger; i += 2)
+		{
+			Answer += i;
+		}
+	}
+	else
+	{
+
+		for (int i = 2; i <= PositiveInteger; i += 2)
+		{
+			Answer += i * i;
+		}
+	}
+
+	return Answer;
+}
