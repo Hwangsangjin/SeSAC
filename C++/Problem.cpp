@@ -97,6 +97,10 @@ void Problem2()
 	const int Size = EndNumber - StartNumber + 1;
 	assert(Size > 0);
 	IntPtr = new int[Size];
+	if (!IntPtr)
+	{
+		return;
+	}
 
 	cout << "결과: [";
 
@@ -108,8 +112,8 @@ void Problem2()
 
 	cout << "\n";
 
-	IntPtr = nullptr;
 	delete[] IntPtr;
+	IntPtr = nullptr;
 }
 
 int Problem3()
