@@ -204,3 +204,14 @@ void Problem4()
 		std::cout << "정답: " << Answer << "\n";
 	}
 }
+
+bool Problem5()
+{
+	std::cout << "true/false 4개: ";
+
+	bool X1, X2, X3, X4;
+	std::cin >> std::boolalpha >> X1 >> X2 >> X3 >> X4;
+
+	// 조건의 참, 거짓에 따라서 true 또는 false 반환
+	return (X1 || X2) && (X3 || X4);
+}
