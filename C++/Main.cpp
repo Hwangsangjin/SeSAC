@@ -12,6 +12,7 @@ int main()
 		std::cout << "1. 다이어트\n";
 		std::cout << "2. 카운트 업\n";
 		std::cout << "3. 홀짝에 따라 다른 값 반환하기\n";
+		std::cout << "4. 7게임\n";
 		std::cout << "0. 프로그램 종료\n";
 		std::cout << ">> ";
 
@@ -55,6 +56,13 @@ int main()
 			int Answer;
 			Answer = IntFPtr();
 			std::cout << "정답: " << Answer << "\n\n";
+			::system("pause");
+			::system("cls");
+			break;
+		case 4:
+			VoidFPtr = Problem4;
+			VoidFPtr();
+			std::cout << "\n";
 			::system("pause");
 			::system("cls");
 			break;
