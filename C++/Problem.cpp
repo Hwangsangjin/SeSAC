@@ -1,4 +1,5 @@
 ﻿#include <cassert>
+#include <cmath>
 #include <iostream>
 
 void Problem1()
@@ -214,4 +215,160 @@ bool Problem5()
 
 	// 조건의 참, 거짓에 따라서 true 또는 false 반환
 	return (X1 || X2) && (X3 || X4);
+}
+
+int Problem6()
+{
+	std::cout << "네 개의 주사위 숫자: ";
+
+	int DiceA, DiceB, DiceC, DiceD;
+	
+	for (int i = 0; i < 4; i++)
+	{
+		int DiceNumber;
+		std::cin >> DiceNumber;
+		if (!std::cin)
+		{
+			std::cin.clear();
+			std::cin.ignore(INT_MAX, '\n');
+		}
+
+		const bool bCheckedDiceNumber = (DiceNumber >= 1) && (DiceNumber <= 6);
+		if (!bCheckedDiceNumber)
+		{
+			i--;
+			continue;
+		}
+
+		switch (i)
+		{
+		case 0:
+			DiceA = DiceNumber;
+			break;
+		case 1:
+			DiceB = DiceNumber;
+			break;
+		case 2:
+			DiceC = DiceNumber;
+			break;
+		case 3:
+			DiceD = DiceNumber;
+			break;
+		}
+	}
+
+	// 주사위의 숫자가 모두 같은 경우
+	if ((DiceA == DiceB) && (DiceB == DiceC) && (DiceC == DiceD))
+	{
+		return 1111 * DiceA;
+	}
+	// A, B, C만 같은 경우
+	else if ((DiceA == DiceB) && (DiceB == DiceC))
+	{
+		return static_cast<int>(std::pow(10 * DiceA + DiceD, 2));
+	}
+	// A, B, D만 같은 경우
+	else if ((DiceA == DiceB) && (DiceB == DiceD))
+	{
+		return static_cast<int>(std::pow(10 * DiceA + DiceC, 2));
+	}
+	// A, C, D만 같은 경우
+	else if ((DiceA == DiceC) && (DiceC == DiceD))
+	{
+		return static_cast<int>(std::pow(10 * DiceA + DiceB, 2));
+	}
+	// B, C, D만 같은 경우
+	else if ((DiceB == DiceC) && (DiceC == DiceD))
+	{
+		return static_cast<int>(std::pow(10 * DiceB + DiceA, 2));
+	}
+	// A, B가 같고
+	else if (DiceA == DiceB)
+	{
+		// C, D가 같은 경우
+		if (DiceC == DiceD)
+		{
+			return (DiceA + DiceC) * std::abs(DiceA - DiceC);
+		}
+		// C, D가 다른 경우
+		else
+		{
+			return DiceC * DiceD;
+		}
+	}
+	// A, C가 같고
+	else if (DiceA == DiceC)
+	{
+		// B, D가 같은 경우
+		if (DiceB == DiceD)
+		{
+			return (DiceA + DiceB) * std::abs(DiceA - DiceB);
+		}
+		// B, D가 다른 경우
+		else
+		{
+			return DiceB * DiceD;
+		}
+	}
+	// A, D가 같고
+	else if (DiceA == DiceD)
+	{
+		// B, C가 같은 경우
+		if (DiceB == DiceC)
+		{
+			return (DiceA + DiceB) * std::abs(DiceA - DiceB);
+		}
+		// B, C가 다른 경우
+		else
+		{
+			return DiceB * DiceC;
+		}
+	}
+	// B, C가 같고
+	else if (DiceB == DiceC)
+	{
+		// A, D가 같은 경우
+		if (DiceA == DiceD)
+		{
+			return (DiceA + DiceB) * std::abs(DiceA - DiceB);
+		}
+		// A, D가 다른 경우
+		else
+		{
+			return DiceA * DiceD;
+		}
+	}
+	// B, D가 같고
+	else if (DiceB == DiceD)
+	{
+		// A, C가 같은 경우
+		if (DiceA == DiceC)
+		{
+			return (DiceA + DiceB) * std::abs(DiceA - DiceB);
+		}
+		// A, C가 다른 경우
+		else
+		{
+			return DiceA * DiceC;
+		}
+	}
+	// C, D가 같고
+	else if (DiceC == DiceD)
+	{
+		// A, B가 같은 경우
+		if (DiceA == DiceB)
+		{
+			return (DiceA + DiceC) * std::abs(DiceA - DiceC);
+		}
+		// A, B가 다른 경우
+		else
+		{
+			return DiceA * DiceB;
+		}
+	}
+	// 주사위의 숫자가 모두 다른 경우
+	else
+	{
+		return std::min(std::min(DiceA, DiceB), std::min(DiceC, DiceD));
+	}
 }

@@ -15,6 +15,7 @@ int main()
 		std::cout << "3. 홀짝에 따라 다른 값 반환하기\n";
 		std::cout << "4. 7게임\n";
 		std::cout << "5. 간단한 논리 연산\n";
+		std::cout << "6. 주사위 게임 3\n";
 		std::cout << "0. 프로그램 종료\n";
 		std::cout << ">> ";
 
@@ -75,6 +76,14 @@ int main()
 			bool Result;
 			Result = BoolFPtr();
 			std::cout << "결과: " << std::boolalpha << Result << "\n\n";
+			::system("pause");
+			::system("cls");
+			break;
+		case 6:
+			IntFPtr = Problem6;
+			int Score;
+			Score = IntFPtr();
+			std::cout << "점수: " << Score << "\n\n";
 			::system("pause");
 			::system("cls");
 			break;
