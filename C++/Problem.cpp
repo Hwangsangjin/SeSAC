@@ -96,24 +96,30 @@ void Problem2()
 	// 시작 숫자부터 마지막 숫자까지의 크기
 	const int Size = EndNumber - StartNumber + 1;
 	assert(Size > 0);
-	IntPtr = new int[Size];
-	if (!IntPtr)
+
+	try
 	{
+		IntPtr = new int[Size];
+
+		cout << "결과: [";
+
+		for (int i = 0; i < Size; i++)
+		{
+			IntPtr[i] = StartNumber++;
+			(i == Size - 1) ? (cout << IntPtr[i] << "]") : (cout << IntPtr[i] << " ");
+		}
+
+		cout << "\n";
+
+		delete[] IntPtr;
+		IntPtr = nullptr;
+
+	}
+	catch (std::bad_alloc e)
+	{
+		cout << e.what() << "\n";
 		return;
 	}
-
-	cout << "결과: [";
-
-	for (int i = 0; i < Size; i++)
-	{
-		IntPtr[i] = StartNumber++;
-		(i == Size - 1) ? (cout << IntPtr[i] << "]") : (cout << IntPtr[i] << " ");
-	}
-
-	cout << "\n";
-
-	delete[] IntPtr;
-	IntPtr = nullptr;
 }
 
 int Problem3()
