@@ -1,10 +1,13 @@
 ﻿#include <cassert>
 #include <cmath>
 #include <iostream>
+#include <limits>
 
 using std::cin;
 using std::cout;
 using std::boolalpha;
+using std::numeric_limits;
+using std::streamsize;
 using std::pow;
 using std::abs;
 using std::min;
@@ -21,8 +24,12 @@ void Problem1()
 		if (!cin)
 		{
 			cin.clear();
-			cin.ignore(INT_MAX, '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			continue;
 		}
+
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 		const bool bCheckedWeight = (Weight >= 10) && (Weight <= 80);
 		const bool bCheckedDay = (Day >= 1) && (Day <= 10000);
@@ -39,10 +46,13 @@ void Problem1()
 		if (!cin)
 		{
 			cin.clear();
-			cin.ignore(INT_MAX, '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 			i--;
 			continue;
 		}
+
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 		const bool bCheckedCalorie = (Calorie >= 1) && (Calorie <= 10000);
 		const bool bCheckedStep = (Step >= 1) && (Step <= 10000);
@@ -61,7 +71,7 @@ void Problem1()
 		(Calorie > Step) ? (Weight += 1) : (Weight -= 1);
 	}
 
-	cout << "다이어트 후 몸무게: " << Weight << "\n";
+	cout << "다이어트 후 몸무게: " << Weight;
 }
 
 void Problem2()
@@ -77,9 +87,13 @@ void Problem2()
 		if (!cin)
 		{
 			cin.clear();
-			cin.ignore(INT_MAX, '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 			system("cls");
+			continue;
 		}
+
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 		const bool bCheckedStartNumber = (StartNumber >= 0) && (StartNumber <= EndNumber);
 		const bool bCheckedEndNumber = (EndNumber >= StartNumber) && (EndNumber <= 50);
@@ -109,16 +123,12 @@ void Problem2()
 			(i == Size - 1) ? (cout << IntPtr[i] << "]") : (cout << IntPtr[i] << " ");
 		}
 
-		cout << "\n";
-
 		delete[] IntPtr;
 		IntPtr = nullptr;
-
 	}
 	catch (std::bad_alloc e)
 	{
-		cout << e.what() << "\n";
-		return;
+		cout << e.what();
 	}
 }
 
@@ -134,9 +144,13 @@ int Problem3()
 		if (!cin)
 		{
 			cin.clear();
-			cin.ignore(INT_MAX, '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 			system("cls");
+			continue;
 		}
+
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 		const bool bCheckedPositiveInteger = (PositiveInteger >= 1) && (PositiveInteger <= 100);
 		if (bCheckedPositiveInteger)
@@ -179,9 +193,14 @@ void Problem4()
 		if (!cin)
 		{
 			cin.clear();
-			cin.ignore(INT_MAX, '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 			system("cls");
+			i--;
+			continue;
 		}
+
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 		const bool bCheckedSevenDigit = (SevenDigit >= 1000000) && (SevenDigit <= 9999999);
 		if (!bCheckedSevenDigit)
@@ -227,6 +246,8 @@ bool Problem5()
 
 	bool X1, X2, X3, X4;
 	cin >> boolalpha >> X1 >> X2 >> X3 >> X4;
+	cin.clear();
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 	// 조건의 참, 거짓에 따라서 true 또는 false 반환
 	return (X1 || X2) && (X3 || X4);
@@ -237,15 +258,17 @@ int Problem6()
 	cout << "네 개의 주사위 숫자: ";
 
 	int DiceA, DiceB, DiceC, DiceD;
+	int DiceNumber;
 	
 	for (int i = 0; i < 4; i++)
 	{
-		int DiceNumber;
 		cin >> DiceNumber;
 		if (!cin)
 		{
 			cin.clear();
-			cin.ignore(INT_MAX, '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			i--;
+			continue;
 		}
 
 		const bool bCheckedDiceNumber = (DiceNumber >= 1) && (DiceNumber <= 6);
@@ -271,6 +294,9 @@ int Problem6()
 			break;
 		}
 	}
+
+	cin.clear();
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 	// 주사위의 숫자가 모두 같은 경우
 	if ((DiceA == DiceB) && (DiceB == DiceC) && (DiceC == DiceD))

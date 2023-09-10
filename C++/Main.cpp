@@ -1,9 +1,12 @@
 ﻿#include <iostream>
+#include <limits>
 #include "Main.h"
 
 using std::cin;
 using std::cout;
 using std::boolalpha;
+using std::numeric_limits;
+using std::streamsize;
 
 int main()
 {
@@ -28,11 +31,13 @@ int main()
 		if (!cin)
 		{
 			cin.clear();
-			cin.ignore(INT_MAX, '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 			system("cls");
 			continue;
 		}
 
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		system("cls");
 
 		switch (SelectedNumber)
@@ -49,14 +54,14 @@ int main()
 		case 1:
 			VoidFPtr = Problem1;
 			VoidFPtr();
-			cout << "\n";
+			cout << "\n\n";
 			system("pause");
 			system("cls");
 			break;
 		case 2:
 			VoidFPtr = Problem2;
 			VoidFPtr();
-			cout << "\n";
+			cout << "\n\n";
 			system("pause");
 			system("cls");
 			break;
