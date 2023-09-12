@@ -1,5 +1,4 @@
-﻿#include <cassert>
-#include <cmath>
+﻿#include "Problem.h"
 #include <iostream>
 #include <limits>
 
@@ -8,83 +7,28 @@ using std::cout;
 using std::boolalpha;
 using std::numeric_limits;
 using std::streamsize;
-using std::pow;
-using std::abs;
-using std::min;
 
-void Problem1()
+void Problem()
 {
-	int Weight, Day, Calorie, Step;
+	void (*VoidFPtr)() = nullptr;
+	int (*IntFPtr)() = nullptr;
+	bool (*BoolFPtr)() = nullptr;
 
 	bool bOnLoop = true;
 	while (bOnLoop)
 	{
-		cout << "몸무게와 다이어트 기간: ";
-		cin >> Weight >> Day;
-		if (!cin)
-		{
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			continue;
-		}
+		cout << "1. 다이어트\n";
+		cout << "2. 카운트 업\n";
+		cout << "3. 홀짝에 따라 다른 값 반환하기\n";
+		cout << "4. 7게임\n";
+		cout << "5. 간단한 논리 연산\n";
+		cout << "6. 주사위 게임 3\n";
+		cout << "0. 프로그램 종료\n";
+		cout << ">> ";
 
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-		const bool bCheckedWeight = (Weight >= 10) && (Weight <= 80);
-		const bool bCheckedDay = (Day >= 1) && (Day <= 10000);
-		if (bCheckedWeight && bCheckedDay)
-		{
-			bOnLoop = false;
-		}
-	}
-
-	for (int i = 0; i < Day; i++)
-	{
-		cout << "칼로리와 걸음수: ";
-		cin >> Calorie >> Step;
-		if (!cin)
-		{
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			i--;
-			continue;
-		}
-
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-		const bool bCheckedCalorie = (Calorie >= 1) && (Calorie <= 10000);
-		const bool bCheckedStep = (Step >= 1) && (Step <= 10000);
-		if (!(bCheckedCalorie && bCheckedStep))
-		{
-			i--;
-			continue;
-		}
-
-		// 몸무게 계산
-		if (Calorie == Step)
-		{
-			continue;
-		}
-
-		(Calorie > Step) ? (Weight += 1) : (Weight -= 1);
-	}
-
-	cout << "다이어트 후 몸무게: " << Weight;
-}
-
-void Problem2()
-{
-	int* IntPtr = nullptr;
-	int StartNumber, EndNumber;
-
-	bool bOnLoop = true;
-	while (bOnLoop)
-	{
-		cout << "시작 숫자와 마지막 숫자: ";
-		cin >> StartNumber >> EndNumber;
-		if (!cin)
+		int SelectedNumber;
+		cin >> SelectedNumber;
+		if (cin.fail())
 		{
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -94,322 +38,64 @@ void Problem2()
 
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		system("cls");
 
-		const bool bCheckedStartNumber = (StartNumber >= 0) && (StartNumber <= EndNumber);
-		const bool bCheckedEndNumber = (EndNumber >= StartNumber) && (EndNumber <= 50);
-		if (bCheckedStartNumber && bCheckedEndNumber)
-		{
-			bOnLoop = false;
-		}
-		else
-		{
-			system("cls");
-		}
-	}
-
-	// 시작 숫자부터 마지막 숫자까지의 크기
-	const int Size = EndNumber - StartNumber + 1;
-	assert(Size > 0);
-
-	try
-	{
-		IntPtr = new int[Size];
-
-		cout << "결과: [";
-
-		for (int i = 0; i < Size; i++)
-		{
-			IntPtr[i] = StartNumber++;
-			(i == Size - 1) ? (cout << IntPtr[i] << "]") : (cout << IntPtr[i] << " ");
-		}
-
-		delete[] IntPtr;
-		IntPtr = nullptr;
-	}
-	catch (std::bad_alloc e)
-	{
-		cout << e.what();
-	}
-}
-
-int Problem3()
-{
-	int PositiveInteger, Answer = 0;
-
-	bool bOnLoop = true;
-	while (bOnLoop)
-	{
-		cout << "양의 정수: ";
-		cin >> PositiveInteger;
-		if (!cin)
-		{
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			system("cls");
-			continue;
-		}
-
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-		const bool bCheckedPositiveInteger = (PositiveInteger >= 1) && (PositiveInteger <= 100);
-		if (bCheckedPositiveInteger)
-		{
-			bOnLoop = false;
-		}
-		else
-		{
-			system("cls");
-		}
-	}
-
-	// 홀수, 짝수 판단 후 합 또는 제곱합 계산
-	if (PositiveInteger % 2 == 1)
-	{
-		for (int i = 1; i <= PositiveInteger; i += 2)
-		{
-			Answer += i;
-		}
-	}
-	else
-	{
-		for (int i = 2; i <= PositiveInteger; i += 2)
-		{
-			Answer += i * i;
-		}
-	}
-
-	return Answer;
-}
-
-void Problem4()
-{
-	int SevenDigit, Answer;
-
-	for (int i = 0; i < 5; i++)
-	{
-		cout << "일곱 자리 정수: ";
-		cin >> SevenDigit;
-		if (!cin)
-		{
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			system("cls");
-			i--;
-			continue;
-		}
-
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-		const bool bCheckedSevenDigit = (SevenDigit >= 1000000) && (SevenDigit <= 9999999);
-		if (!bCheckedSevenDigit)
-		{
-			i--;
-			continue;
-		}
-
-		// 정답 초기화
-		Answer = 0;
-
-		// 홀수 번째 자리의 숫자들을 모두 합
-		Answer += SevenDigit / 1000000;
-		Answer += (SevenDigit % 100000) / 10000;
-		Answer += (SevenDigit % 1000) / 100;
-		Answer += (SevenDigit % 10) / 1;
-
-		// 0이 아닌 짝수 번째 자리의 숫자를 모두 곱
-		if (((SevenDigit % 1000000) / 100000) != 0)
-		{
-			Answer *= (SevenDigit % 1000000) / 100000;
-		}
-
-		if (((SevenDigit % 10000) / 1000) != 0)
-		{
-			Answer *= (SevenDigit % 10000) / 1000;
-		}
-
-		if (((SevenDigit % 100) / 10) != 0)
-		{
-			Answer *= (SevenDigit % 100) / 10;
-		}
-
-		// 10으로 나눈 나머지값
-		Answer %= 10;
-		cout << "정답: " << Answer << "\n";
-	}
-}
-
-bool Problem5()
-{
-	cout << "true/false 4개: ";
-
-	bool X1, X2, X3, X4;
-	cin >> boolalpha >> X1 >> X2 >> X3 >> X4;
-	cin.clear();
-	cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-	// 조건의 참, 거짓에 따라서 true 또는 false 반환
-	return (X1 || X2) && (X3 || X4);
-}
-
-int Problem6()
-{
-	cout << "네 개의 주사위 숫자: ";
-
-	int DiceA, DiceB, DiceC, DiceD;
-	int DiceNumber;
-	
-	for (int i = 0; i < 4; i++)
-	{
-		cin >> DiceNumber;
-		if (!cin)
-		{
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			i--;
-			continue;
-		}
-
-		const bool bCheckedDiceNumber = (DiceNumber >= 1) && (DiceNumber <= 6);
-		if (!bCheckedDiceNumber)
-		{
-			i--;
-			continue;
-		}
-
-		switch (i)
+		switch (SelectedNumber)
 		{
 		case 0:
-			DiceA = DiceNumber;
+			if (VoidFPtr)
+				VoidFPtr = nullptr;
+			if (IntFPtr)
+				IntFPtr = nullptr;
+			if (BoolFPtr)
+				BoolFPtr = nullptr;
+			bOnLoop = false;
 			break;
 		case 1:
-			DiceB = DiceNumber;
+			VoidFPtr = Problem1;
+			VoidFPtr();
+			cout << "\n\n";
+			system("pause");
+			system("cls");
 			break;
 		case 2:
-			DiceC = DiceNumber;
+			VoidFPtr = Problem2;
+			VoidFPtr();
+			cout << "\n\n";
+			system("pause");
+			system("cls");
 			break;
 		case 3:
-			DiceD = DiceNumber;
+			IntFPtr = Problem3;
+			int Answer;
+			Answer = IntFPtr();
+			cout << "정답: " << Answer << "\n\n";
+			system("pause");
+			system("cls");
+			break;
+		case 4:
+			VoidFPtr = Problem4;
+			VoidFPtr();
+			cout << "\n";
+			system("pause");
+			system("cls");
+			break;
+		case 5:
+			BoolFPtr = Problem5;
+			bool Result;
+			Result = BoolFPtr();
+			cout << "결과: " << boolalpha << Result << "\n\n";
+			system("pause");
+			system("cls");
+			break;
+		case 6:
+			IntFPtr = Problem6;
+			int Score;
+			Score = IntFPtr();
+			cout << "점수: " << Score << "\n\n";
+			system("pause");
+			system("cls");
 			break;
 		}
-	}
-
-	cin.clear();
-	cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-	// 주사위의 숫자가 모두 같은 경우
-	if ((DiceA == DiceB) && (DiceB == DiceC) && (DiceC == DiceD))
-	{
-		return 1111 * DiceA;
-	}
-	// A, B, C만 같은 경우
-	else if ((DiceA == DiceB) && (DiceB == DiceC))
-	{
-		return static_cast<int>(pow(10 * DiceA + DiceD, 2));
-	}
-	// A, B, D만 같은 경우
-	else if ((DiceA == DiceB) && (DiceB == DiceD))
-	{
-		return static_cast<int>(pow(10 * DiceA + DiceC, 2));
-	}
-	// A, C, D만 같은 경우
-	else if ((DiceA == DiceC) && (DiceC == DiceD))
-	{
-		return static_cast<int>(pow(10 * DiceA + DiceB, 2));
-	}
-	// B, C, D만 같은 경우
-	else if ((DiceB == DiceC) && (DiceC == DiceD))
-	{
-		return static_cast<int>(pow(10 * DiceB + DiceA, 2));
-	}
-	// A, B가 같고
-	else if (DiceA == DiceB)
-	{
-		// C, D가 같은 경우
-		if (DiceC == DiceD)
-		{
-			return (DiceA + DiceC) * abs(DiceA - DiceC);
-		}
-		// C, D가 다른 경우
-		else
-		{
-			return DiceC * DiceD;
-		}
-	}
-	// A, C가 같고
-	else if (DiceA == DiceC)
-	{
-		// B, D가 같은 경우
-		if (DiceB == DiceD)
-		{
-			return (DiceA + DiceB) * abs(DiceA - DiceB);
-		}
-		// B, D가 다른 경우
-		else
-		{
-			return DiceB * DiceD;
-		}
-	}
-	// A, D가 같고
-	else if (DiceA == DiceD)
-	{
-		// B, C가 같은 경우
-		if (DiceB == DiceC)
-		{
-			return (DiceA + DiceB) * abs(DiceA - DiceB);
-		}
-		// B, C가 다른 경우
-		else
-		{
-			return DiceB * DiceC;
-		}
-	}
-	// B, C가 같고
-	else if (DiceB == DiceC)
-	{
-		// A, D가 같은 경우
-		if (DiceA == DiceD)
-		{
-			return (DiceA + DiceB) * abs(DiceA - DiceB);
-		}
-		// A, D가 다른 경우
-		else
-		{
-			return DiceA * DiceD;
-		}
-	}
-	// B, D가 같고
-	else if (DiceB == DiceD)
-	{
-		// A, C가 같은 경우
-		if (DiceA == DiceC)
-		{
-			return (DiceA + DiceB) * abs(DiceA - DiceB);
-		}
-		// A, C가 다른 경우
-		else
-		{
-			return DiceA * DiceC;
-		}
-	}
-	// C, D가 같고
-	else if (DiceC == DiceD)
-	{
-		// A, B가 같은 경우
-		if (DiceA == DiceB)
-		{
-			return (DiceA + DiceC) * abs(DiceA - DiceC);
-		}
-		// A, B가 다른 경우
-		else
-		{
-			return DiceA * DiceB;
-		}
-	}
-	// 주사위의 숫자가 모두 다른 경우
-	else
-	{
-		return min(min(DiceA, DiceB), min(DiceC, DiceD));
 	}
 }
