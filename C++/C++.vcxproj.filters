@@ -8,11 +8,32 @@
     <Filter Include="Source\Problem">
       <UniqueIdentifier>{6d57e3ab-b067-47e2-b28e-70546d961869}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Problem\Public">
-      <UniqueIdentifier>{a2c3d37f-3995-4bb9-8123-8b71ff2072cd}</UniqueIdentifier>
+    <Filter Include="Source\Lesson">
+      <UniqueIdentifier>{f2186965-07b2-46b3-9a14-4bb9cb9de65f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Problem\Private">
-      <UniqueIdentifier>{1798ac3e-5b12-4b6f-a3e1-d600cab62faf}</UniqueIdentifier>
+    <Filter Include="Source\Lesson\Chapter01">
+      <UniqueIdentifier>{893524ed-b738-46d0-b601-4eb2b5cf3a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter02">
+      <UniqueIdentifier>{978cea9d-cd36-4fe7-8712-26c30bf9d876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter03">
+      <UniqueIdentifier>{db2b6382-355c-4d7e-b70a-9462d628354b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter04">
+      <UniqueIdentifier>{d273e876-db66-419f-b702-d0fe81d86377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter05">
+      <UniqueIdentifier>{2c10a1e7-efd5-4c6a-a8ec-5b1e771a283e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter06">
+      <UniqueIdentifier>{2dde7859-cdfc-49c5-b2fc-73a9e2014985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter07">
+      <UniqueIdentifier>{26d53bdc-7976-4b99-b5ca-f54ad8d10741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter99">
+      <UniqueIdentifier>{d9962682-e07e-4f78-92d5-33bdb800cfd9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -20,25 +41,49 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Problem.cpp">
-      <Filter>Source\Problem\Private</Filter>
+      <Filter>Source\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem1.cpp">
-      <Filter>Source\Problem\Private</Filter>
+      <Filter>Source\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem2.cpp">
-      <Filter>Source\Problem\Private</Filter>
+      <Filter>Source\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem3.cpp">
-      <Filter>Source\Problem\Private</Filter>
+      <Filter>Source\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem4.cpp">
-      <Filter>Source\Problem\Private</Filter>
+      <Filter>Source\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem5.cpp">
-      <Filter>Source\Problem\Private</Filter>
+      <Filter>Source\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem6.cpp">
-      <Filter>Source\Problem\Private</Filter>
+      <Filter>Source\Problem</Filter>
+    </ClCompile>
+    <ClCompile Include="Variable.cpp">
+      <Filter>Source\Lesson\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation.cpp">
+      <Filter>Source\Lesson\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Statement.cpp">
+      <Filter>Source\Lesson\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Example.cpp">
+      <Filter>Source\Lesson\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.cpp">
+      <Filter>Source\Lesson\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Source\Lesson\Chapter06</Filter>
+    </ClCompile>
+    <ClCompile Include="Structure.cpp">
+      <Filter>Source\Lesson\Chapter07</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniProject.cpp">
+      <Filter>Source\Lesson\Chapter99</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,7 +91,31 @@
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="Problem.h">
-      <Filter>Source\Problem\Public</Filter>
+      <Filter>Source\Problem</Filter>
+    </ClInclude>
+    <ClInclude Include="Variable.h">
+      <Filter>Source\Lesson\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation.h">
+      <Filter>Source\Lesson\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Statement.h">
+      <Filter>Source\Lesson\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Example.h">
+      <Filter>Source\Lesson\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Source\Lesson\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Source\Lesson\Chapter06</Filter>
+    </ClInclude>
+    <ClInclude Include="Structure.h">
+      <Filter>Source\Lesson\Chapter07</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniProject.h">
+      <Filter>Source\Lesson\Chapter99</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
