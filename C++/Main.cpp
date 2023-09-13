@@ -2,7 +2,8 @@
 
 int main()
 {
-	TwoDimension();
+	PointerDefine();
+	PointerOperation();
 
 	return 0;
 }

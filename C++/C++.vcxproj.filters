@@ -35,6 +35,9 @@
     <Filter Include="Source\Lesson\Chapter99">
       <UniqueIdentifier>{d9962682-e07e-4f78-92d5-33bdb800cfd9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Lesson\Chapter08">
+      <UniqueIdentifier>{d128eaf7-b1e4-4b59-ba9c-34c77f38d076}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -85,6 +88,9 @@
     <ClCompile Include="MiniProject.cpp">
       <Filter>Source\Lesson\Chapter99</Filter>
     </ClCompile>
+    <ClCompile Include="Pointer.cpp">
+      <Filter>Source\Lesson\Chapter08</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -116,6 +122,9 @@
     </ClInclude>
     <ClInclude Include="MiniProject.h">
       <Filter>Source\Lesson\Chapter99</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointer.h">
+      <Filter>Source\Lesson\Chapter08</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

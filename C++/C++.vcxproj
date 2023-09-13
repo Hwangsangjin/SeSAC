@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Pointer.cpp" />
     <ClCompile Include="Variable.cpp" />
     <ClCompile Include="Operation.cpp" />
     <ClCompile Include="Statement.cpp" />
@@ -145,6 +146,7 @@
     <ClCompile Include="Problem6.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Pointer.h" />
     <ClInclude Include="Variable.h" />
     <ClInclude Include="Operation.h" />
     <ClInclude Include="Statement.h" />

@@ -7,4 +7,5 @@
 #include "Array.h"
 #include "String.h"
 #include "Structure.h"
+#include "Pointer.h"
 #include "MiniProject.h"
