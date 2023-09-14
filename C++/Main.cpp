@@ -2,7 +2,7 @@
 
 int main()
 {
-	BallSwap();
+	ScissorsRockPaper();
 	
 	return 0;
 }

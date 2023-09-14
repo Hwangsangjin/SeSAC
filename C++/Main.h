@@ -10,3 +10,4 @@
 #include "Pointer.h"
 #include "Dynamic.h"
 #include "MiniProject.h"
+#include "ScissorsRockPaper.h"

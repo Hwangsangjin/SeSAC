@@ -127,9 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Class.cpp" />
     <ClCompile Include="Dynamic.cpp" />
     <ClCompile Include="MiniProject.cpp" />
     <ClCompile Include="Pointer.cpp" />
+    <ClCompile Include="ScissorsRockPaper.cpp" />
     <ClCompile Include="Variable.cpp" />
     <ClCompile Include="Operation.cpp" />
     <ClCompile Include="Statement.cpp" />
@@ -147,8 +149,10 @@
     <ClCompile Include="Problem6.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Class.h" />
     <ClInclude Include="Dynamic.h" />
     <ClInclude Include="Pointer.h" />
+    <ClInclude Include="ScissorsRockPaper.h" />
     <ClInclude Include="Variable.h" />
     <ClInclude Include="Operation.h" />
     <ClInclude Include="Statement.h" />

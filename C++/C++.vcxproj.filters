@@ -41,6 +41,15 @@
     <Filter Include="Source\Lesson\Chapter09">
       <UniqueIdentifier>{6c63c937-0a4c-4159-8424-c0d9d2cde5ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game">
+      <UniqueIdentifier>{3dca11ef-09ad-4f55-ad74-3a7c5af7b4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lesson\Chapter10">
+      <UniqueIdentifier>{2bd23b76-bef6-4809-ab69-449094bf319a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\ScissorsRockPaper">
+      <UniqueIdentifier>{8188899e-ebce-4b7a-8c0b-2fda1560d2ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -97,6 +106,12 @@
     <ClCompile Include="MiniProject.cpp">
       <Filter>Source\Lesson\Chapter99</Filter>
     </ClCompile>
+    <ClCompile Include="Class.cpp">
+      <Filter>Source\Lesson\Chapter10</Filter>
+    </ClCompile>
+    <ClCompile Include="ScissorsRockPaper.cpp">
+      <Filter>Source\Game\ScissorsRockPaper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -134,6 +149,12 @@
     </ClInclude>
     <ClInclude Include="Dynamic.h">
       <Filter>Source\Lesson\Chapter09</Filter>
+    </ClInclude>
+    <ClInclude Include="Class.h">
+      <Filter>Source\Lesson\Chapter10</Filter>
+    </ClInclude>
+    <ClInclude Include="ScissorsRockPaper.h">
+      <Filter>Source\Game\ScissorsRockPaper</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
