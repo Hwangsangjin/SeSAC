@@ -60,7 +60,7 @@ void UpAndDown()
 
 	cout << "정답!\n";
 	cout << "시도 횟수: " << Count << "\n";
-	
+
 	double Duration = (double)(EndTime - StartTime) / 1000;
 	cout << "걸린 시간: " << Duration;
 }
@@ -118,4 +118,38 @@ void Roulette()
 
 		cout << "\n";
 	}
+}
+
+void BallInsert()
+{
+	cout << "바구니의 개수와 횟수: ";
+	int BasketCount, InsertCount;
+	cin >> BasketCount >> InsertCount;
+
+	int* pBasket = new int[BasketCount];
+	for (int i = 0; i < BasketCount; i++)
+	{
+		pBasket[i] = 0;
+	}
+
+	int StartNumber, EndNumber, BallNumber;
+
+	for (int i = 0; i < InsertCount; i++)
+	{
+		cout << "시작과 끝 번호, 공 숫자: ";
+		cin >> StartNumber >> EndNumber >> BallNumber;
+
+		for (int j = StartNumber; j <= EndNumber; j++)
+		{
+			pBasket[j - 1] = BallNumber;
+		}
+	}
+
+	for (int i = 0; i < BasketCount; i++)
+	{
+		cout << pBasket[i] << " ";
+	}
+
+	delete[] pBasket;
+	pBasket = nullptr;
 }

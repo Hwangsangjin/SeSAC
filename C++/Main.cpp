@@ -2,7 +2,7 @@
 
 int main()
 {
-	DynamicVariable();
+	BallInsert();
 	
 	return 0;
 }
