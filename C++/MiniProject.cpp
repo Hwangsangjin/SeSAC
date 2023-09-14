@@ -122,7 +122,7 @@ void Roulette()
 
 void BallInsert()
 {
-	cout << "바구니의 개수와 횟수: ";
+	cout << "바구니의 개수와 공을 넣는 횟수: ";
 	int BasketCount, InsertCount;
 	cin >> BasketCount >> InsertCount;
 
@@ -136,13 +136,47 @@ void BallInsert()
 
 	for (int i = 0; i < InsertCount; i++)
 	{
-		cout << "시작과 끝 번호, 공 숫자: ";
+		cout << "시작과 끝 번호, 공의 숫자: ";
 		cin >> StartNumber >> EndNumber >> BallNumber;
 
 		for (int j = StartNumber; j <= EndNumber; j++)
 		{
 			pBasket[j - 1] = BallNumber;
 		}
+	}
+
+	for (int i = 0; i < BasketCount; i++)
+	{
+		cout << pBasket[i] << " ";
+	}
+
+	delete[] pBasket;
+	pBasket = nullptr;
+}
+
+void BallSwap()
+{
+	cout << "바구니의 개수와 공을 바꾸는 횟수: ";
+	int BasketCount, SwapCount;
+	cin >> BasketCount >> SwapCount;
+
+	int* pBasket = new int[BasketCount];
+	for (int i = 0; i < BasketCount; i++)
+	{
+		pBasket[i] = i + 1;
+	}
+
+	int LeftBasket, RightBasket, TempBasket;
+
+	for (int i = 0; i < SwapCount; i++)
+	{
+		cout << "왼쪽 바구니와 오른쪽 바구니 번호: ";
+		cin >> LeftBasket >> RightBasket;
+
+		TempBasket = pBasket[LeftBasket - 1];
+		pBasket[LeftBasket - 1] = pBasket[RightBasket - 1];
+		pBasket[RightBasket - 1] = TempBasket;
+
 	}
 
 	for (int i = 0; i < BasketCount; i++)

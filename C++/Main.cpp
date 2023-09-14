@@ -2,7 +2,7 @@
 
 int main()
 {
-	BallInsert();
+	BallSwap();
 	
 	return 0;
 }
