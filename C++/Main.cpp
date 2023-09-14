@@ -2,8 +2,7 @@
 
 int main()
 {
-	PointerDefine();
-	PointerOperation();
-
+	DynamicVariable();
+	
 	return 0;
 }

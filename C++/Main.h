@@ -8,4 +8,5 @@
 #include "String.h"
 #include "Structure.h"
 #include "Pointer.h"
+#include "Dynamic.h"
 #include "MiniProject.h"
