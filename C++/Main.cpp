@@ -2,7 +2,7 @@
 
 int main()
 {
-	ScissorsRockPaper();
+	Lotto();
 	
 	return 0;
 }

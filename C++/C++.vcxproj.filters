@@ -50,6 +50,9 @@
     <Filter Include="Source\Game\ScissorsRockPaper">
       <UniqueIdentifier>{8188899e-ebce-4b7a-8c0b-2fda1560d2ca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game\Lotto">
+      <UniqueIdentifier>{962d45f0-6dd9-4776-8b68-6998bb5786f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -106,11 +109,11 @@
     <ClCompile Include="MiniProject.cpp">
       <Filter>Source\Lesson\Chapter99</Filter>
     </ClCompile>
-    <ClCompile Include="Class.cpp">
-      <Filter>Source\Lesson\Chapter10</Filter>
-    </ClCompile>
     <ClCompile Include="ScissorsRockPaper.cpp">
       <Filter>Source\Game\ScissorsRockPaper</Filter>
+    </ClCompile>
+    <ClCompile Include="Lotto.cpp">
+      <Filter>Source\Game\Lotto</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -150,11 +153,11 @@
     <ClInclude Include="Dynamic.h">
       <Filter>Source\Lesson\Chapter09</Filter>
     </ClInclude>
-    <ClInclude Include="Class.h">
-      <Filter>Source\Lesson\Chapter10</Filter>
-    </ClInclude>
     <ClInclude Include="ScissorsRockPaper.h">
       <Filter>Source\Game\ScissorsRockPaper</Filter>
+    </ClInclude>
+    <ClInclude Include="Lotto.h">
+      <Filter>Source\Game\Lotto</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

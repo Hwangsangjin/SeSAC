@@ -11,3 +11,4 @@
 #include "Dynamic.h"
 #include "MiniProject.h"
 #include "ScissorsRockPaper.h"
+#include "Lotto.h"
