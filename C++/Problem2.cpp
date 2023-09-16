@@ -4,6 +4,7 @@
 
 using std::cin;
 using std::cout;
+using std::cerr;
 using std::numeric_limits;
 using std::streamsize;
 
@@ -61,6 +62,6 @@ void Problem2()
 	}
 	catch (std::bad_alloc e)
 	{
-		cout << e.what();
+		cerr << e.what();
 	}
 }
