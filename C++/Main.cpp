@@ -2,7 +2,7 @@
 
 int main()
 {
-	Baseball();
+	Problem();
 	
 	return 0;
 }

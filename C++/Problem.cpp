@@ -1,18 +1,20 @@
 ﻿#include "Problem.h"
 #include <iostream>
 #include <limits>
+#include <functional>
 
 using std::cin;
 using std::cout;
 using std::boolalpha;
 using std::numeric_limits;
 using std::streamsize;
+using std::function;
 
 void Problem()
 {
-	void (*VoidFPtr)() = nullptr;
-	int (*IntFPtr)() = nullptr;
-	bool (*BoolFPtr)() = nullptr;
+	function<void()> VoidFPtr;
+	function<int()> IntFPtr;
+	function<bool()> BoolFPtr;
 
 	bool bOnLoop = true;
 	while (bOnLoop)
