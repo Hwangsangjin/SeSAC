@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Baseball.cpp" />
     <ClCompile Include="Dynamic.cpp" />
     <ClCompile Include="Lotto.cpp" />
     <ClCompile Include="MiniProject.cpp" />
@@ -149,6 +150,7 @@
     <ClCompile Include="Problem6.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Baseball.h" />
     <ClInclude Include="Dynamic.h" />
     <ClInclude Include="Lotto.h" />
     <ClInclude Include="Pointer.h" />

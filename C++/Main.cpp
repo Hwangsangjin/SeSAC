@@ -2,7 +2,7 @@
 
 int main()
 {
-	Lotto();
+	Baseball();
 	
 	return 0;
 }

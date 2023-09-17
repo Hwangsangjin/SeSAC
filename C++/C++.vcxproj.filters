@@ -53,6 +53,9 @@
     <Filter Include="Source\Game\Lotto">
       <UniqueIdentifier>{962d45f0-6dd9-4776-8b68-6998bb5786f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game\Baseball">
+      <UniqueIdentifier>{c5b212b6-9fa8-47c6-a62f-3a34c6618859}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -115,6 +118,9 @@
     <ClCompile Include="Lotto.cpp">
       <Filter>Source\Game\Lotto</Filter>
     </ClCompile>
+    <ClCompile Include="Baseball.cpp">
+      <Filter>Source\Game\Baseball</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -158,6 +164,9 @@
     </ClInclude>
     <ClInclude Include="Lotto.h">
       <Filter>Source\Game\Lotto</Filter>
+    </ClInclude>
+    <ClInclude Include="Baseball.h">
+      <Filter>Source\Game\Baseball</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
