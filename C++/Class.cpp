@@ -1,19 +1,24 @@
 #include "Class.h"
-#include <iostream>
-
-using std::cout;
 
 void Class()
 {
-	CAnimal Dog("Dog");
-	CAnimal Cat("Cat");
+	CAnimal Animal("Animal");
+	CDog Dog("Dog");
+	CCat Cat("Cat");
 
-	cout << Dog.GetName() << "\n";
-	cout << Cat.GetName() << "\n";
+	Animal.Speak();
+	Dog.Speak();
+	Cat.Speak();
 
 	CAnimal* pDog = &Dog;
 	CAnimal* pCat = &Cat;
 
-	cout << pDog->GetName() << "\n";
-	cout << pCat->GetName() << "\n";
+	pDog->Speak();
+	pCat->Speak();
+
+	CAnimal* Animals[] = { &Dog, &Cat };
+	for (int i = 0; i < 2; i++)
+	{
+		Animals[i]->Speak();
+	}
 }
