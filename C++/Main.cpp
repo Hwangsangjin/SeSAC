@@ -2,7 +2,7 @@
 
 int main()
 {
-	Problem();
-	
+	Class();
+		
 	return 0;
 }

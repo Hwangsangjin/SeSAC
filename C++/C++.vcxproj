@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Baseball.cpp" />
+    <ClCompile Include="Class.cpp" />
     <ClCompile Include="Dynamic.cpp" />
     <ClCompile Include="Lotto.cpp" />
     <ClCompile Include="MiniProject.cpp" />
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Baseball.h" />
+    <ClInclude Include="Class.h" />
     <ClInclude Include="Dynamic.h" />
     <ClInclude Include="Lotto.h" />
     <ClInclude Include="Pointer.h" />

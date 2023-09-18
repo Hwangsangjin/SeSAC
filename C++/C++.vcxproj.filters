@@ -121,6 +121,9 @@
     <ClCompile Include="Baseball.cpp">
       <Filter>Source\Game\Baseball</Filter>
     </ClCompile>
+    <ClCompile Include="Class.cpp">
+      <Filter>Source\Lesson\Chapter10</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -167,6 +170,9 @@
     </ClInclude>
     <ClInclude Include="Baseball.h">
       <Filter>Source\Game\Baseball</Filter>
+    </ClInclude>
+    <ClInclude Include="Class.h">
+      <Filter>Source\Lesson\Chapter10</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
