@@ -140,7 +140,7 @@
       <Filter>Source\Lesson\Chapter12</Filter>
     </ClCompile>
     <ClCompile Include="VectorClass.cpp">
-      <Filter>Source</Filter>
+      <Filter>Source\Lesson\Chapter13</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +198,8 @@
     <ClInclude Include="StringClass.h">
       <Filter>Source\Lesson\Chapter12</Filter>
     </ClInclude>
-    <ClInclude Include="VectorClass.h" />
+    <ClInclude Include="VectorClass.h">
+      <Filter>Source\Lesson\Chapter13</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
