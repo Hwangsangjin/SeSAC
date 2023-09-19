@@ -151,6 +151,7 @@
     <ClCompile Include="Problem4.cpp" />
     <ClCompile Include="Problem5.cpp" />
     <ClCompile Include="Problem6.cpp" />
+    <ClCompile Include="VectorClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayClass.h" />
@@ -171,6 +172,7 @@
     <ClInclude Include="MiniProject.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="Problem.h" />
+    <ClInclude Include="VectorClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

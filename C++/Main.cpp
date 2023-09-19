@@ -2,7 +2,7 @@
 
 int main()
 {
-	StringClass();
+	VectorClass();
 		
 	return 0;
 }

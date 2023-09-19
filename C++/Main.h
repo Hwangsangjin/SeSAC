@@ -12,6 +12,7 @@
 #include "Class.h"
 #include "ArrayClass.h"
 #include "StringClass.h"
+#include "VectorClass.h"
 #include "MiniProject.h"
 #include "ScissorsRockPaper.h"
 #include "Lotto.h"
