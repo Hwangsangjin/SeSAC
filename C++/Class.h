@@ -9,9 +9,11 @@ using std::string;
 class CAnimal
 {
 public:
+	CAnimal() = delete;
 	CAnimal(string InName)
 		: Name(InName)
 	{}
+	virtual ~CAnimal() = default;
 
 	string GetName() { return Name; }
 
@@ -27,11 +29,13 @@ protected:
 class CDog : public CAnimal
 {
 public:
+	CDog() = delete;
 	CDog(string InName)
 		: CAnimal(InName)
 	{}
+	virtual ~CDog() = default;
 
-	virtual void Speak() const
+	virtual void Speak() const override
 	{
 		cout << Name << " Woof\n";
 	}
@@ -40,11 +44,13 @@ public:
 class CCat : public CAnimal
 {
 public:
+	CCat() = delete;
 	CCat(string name)
 		: CAnimal(name)
 	{}
+	virtual ~CCat() = default;
 
-	virtual void Speak() const
+	virtual void Speak() const override
 	{
 		cout << Name << " Meow\n";
 	}
