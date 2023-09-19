@@ -56,6 +56,9 @@
     <Filter Include="Source\Game\Baseball">
       <UniqueIdentifier>{c5b212b6-9fa8-47c6-a62f-3a34c6618859}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Lesson\Chapter11">
+      <UniqueIdentifier>{ca587abc-a2f5-4c28-b4db-a39d4d873fad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -124,6 +127,9 @@
     <ClCompile Include="Class.cpp">
       <Filter>Source\Lesson\Chapter10</Filter>
     </ClCompile>
+    <ClCompile Include="ArrayClass.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -174,5 +180,6 @@
     <ClInclude Include="Class.h">
       <Filter>Source\Lesson\Chapter10</Filter>
     </ClInclude>
+    <ClInclude Include="ArrayClass.h" />
   </ItemGroup>
 </Project>

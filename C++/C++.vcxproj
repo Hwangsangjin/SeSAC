@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArrayClass.cpp" />
     <ClCompile Include="Baseball.cpp" />
     <ClCompile Include="Class.cpp" />
     <ClCompile Include="Dynamic.cpp" />
@@ -151,6 +152,7 @@
     <ClCompile Include="Problem6.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArrayClass.h" />
     <ClInclude Include="Baseball.h" />
     <ClInclude Include="Class.h" />
     <ClInclude Include="Dynamic.h" />

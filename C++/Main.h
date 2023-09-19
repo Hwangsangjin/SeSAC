@@ -10,6 +10,7 @@
 #include "Pointer.h"
 #include "Dynamic.h"
 #include "Class.h"
+#include "ArrayClass.h"
 #include "MiniProject.h"
 #include "ScissorsRockPaper.h"
 #include "Lotto.h"
