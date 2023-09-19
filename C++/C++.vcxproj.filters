@@ -59,6 +59,9 @@
     <Filter Include="Source\Lesson\Chapter11">
       <UniqueIdentifier>{ca587abc-a2f5-4c28-b4db-a39d4d873fad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Lesson\Chapter12">
+      <UniqueIdentifier>{fbbdc2ea-5801-4724-a551-ca1d9471d89b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -128,6 +131,9 @@
       <Filter>Source\Lesson\Chapter10</Filter>
     </ClCompile>
     <ClCompile Include="ArrayClass.cpp">
+      <Filter>Source\Lesson\Chapter11</Filter>
+    </ClCompile>
+    <ClCompile Include="StringClass.cpp">
       <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
@@ -180,6 +186,9 @@
     <ClInclude Include="Class.h">
       <Filter>Source\Lesson\Chapter10</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayClass.h" />
+    <ClInclude Include="ArrayClass.h">
+      <Filter>Source\Lesson\Chapter11</Filter>
+    </ClInclude>
+    <ClInclude Include="StringClass.h" />
   </ItemGroup>
 </Project>

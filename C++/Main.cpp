@@ -2,7 +2,7 @@
 
 int main()
 {
-	ArrayClass();
+	StringClass();
 		
 	return 0;
 }
