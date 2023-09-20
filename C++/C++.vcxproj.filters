@@ -1,205 +1,223 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source">
+    <Filter Include="Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source\Problem">
+    <Filter Include="Source Files\Problem">
       <UniqueIdentifier>{6d57e3ab-b067-47e2-b28e-70546d961869}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson">
+    <Filter Include="Source Files\Lesson">
       <UniqueIdentifier>{f2186965-07b2-46b3-9a14-4bb9cb9de65f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter01">
+    <Filter Include="Source Files\Lesson\Chapter01">
       <UniqueIdentifier>{893524ed-b738-46d0-b601-4eb2b5cf3a54}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter02">
+    <Filter Include="Source Files\Lesson\Chapter02">
       <UniqueIdentifier>{978cea9d-cd36-4fe7-8712-26c30bf9d876}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter03">
+    <Filter Include="Source Files\Lesson\Chapter03">
       <UniqueIdentifier>{db2b6382-355c-4d7e-b70a-9462d628354b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter04">
+    <Filter Include="Source Files\Lesson\Chapter04">
       <UniqueIdentifier>{d273e876-db66-419f-b702-d0fe81d86377}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter05">
+    <Filter Include="Source Files\Lesson\Chapter05">
       <UniqueIdentifier>{2c10a1e7-efd5-4c6a-a8ec-5b1e771a283e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter06">
+    <Filter Include="Source Files\Lesson\Chapter06">
       <UniqueIdentifier>{2dde7859-cdfc-49c5-b2fc-73a9e2014985}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter07">
+    <Filter Include="Source Files\Lesson\Chapter07">
       <UniqueIdentifier>{26d53bdc-7976-4b99-b5ca-f54ad8d10741}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter99">
+    <Filter Include="Source Files\Lesson\Chapter99">
       <UniqueIdentifier>{d9962682-e07e-4f78-92d5-33bdb800cfd9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter08">
+    <Filter Include="Source Files\Lesson\Chapter08">
       <UniqueIdentifier>{d128eaf7-b1e4-4b59-ba9c-34c77f38d076}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter09">
+    <Filter Include="Source Files\Lesson\Chapter09">
       <UniqueIdentifier>{6c63c937-0a4c-4159-8424-c0d9d2cde5ce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Game">
-      <UniqueIdentifier>{3dca11ef-09ad-4f55-ad74-3a7c5af7b4eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Lesson\Chapter10">
+    <Filter Include="Source Files\Lesson\Chapter10">
       <UniqueIdentifier>{2bd23b76-bef6-4809-ab69-449094bf319a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Game\ScissorsRockPaper">
-      <UniqueIdentifier>{8188899e-ebce-4b7a-8c0b-2fda1560d2ca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Game\Lotto">
-      <UniqueIdentifier>{962d45f0-6dd9-4776-8b68-6998bb5786f7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Game\Baseball">
-      <UniqueIdentifier>{c5b212b6-9fa8-47c6-a62f-3a34c6618859}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Lesson\Chapter11">
+    <Filter Include="Source Files\Lesson\Chapter11">
       <UniqueIdentifier>{ca587abc-a2f5-4c28-b4db-a39d4d873fad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter12">
+    <Filter Include="Source Files\Lesson\Chapter12">
       <UniqueIdentifier>{fbbdc2ea-5801-4724-a551-ca1d9471d89b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Lesson\Chapter13">
+    <Filter Include="Source Files\Lesson\Chapter13">
       <UniqueIdentifier>{d97d4e1d-aa3a-4bda-903b-c0a0ca7d476e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{3dca11ef-09ad-4f55-ad74-3a7c5af7b4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\ScissorsRockPaper">
+      <UniqueIdentifier>{8188899e-ebce-4b7a-8c0b-2fda1560d2ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Lotto">
+      <UniqueIdentifier>{962d45f0-6dd9-4776-8b68-6998bb5786f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Baseball">
+      <UniqueIdentifier>{c5b212b6-9fa8-47c6-a62f-3a34c6618859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lesson\Chapter14">
+      <UniqueIdentifier>{28bb7988-e64c-4690-86aa-0bbfd5bc79a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lesson\Chapter15">
+      <UniqueIdentifier>{ac3d607c-2d7f-4754-9ef2-e64b6699468a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>Source</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Problem.cpp">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem1.cpp">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem2.cpp">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem3.cpp">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem4.cpp">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem5.cpp">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Problem6.cpp">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClCompile>
     <ClCompile Include="Variable.cpp">
-      <Filter>Source\Lesson\Chapter01</Filter>
+      <Filter>Source Files\Lesson\Chapter01</Filter>
     </ClCompile>
     <ClCompile Include="Operation.cpp">
-      <Filter>Source\Lesson\Chapter02</Filter>
+      <Filter>Source Files\Lesson\Chapter02</Filter>
     </ClCompile>
     <ClCompile Include="Statement.cpp">
-      <Filter>Source\Lesson\Chapter03</Filter>
+      <Filter>Source Files\Lesson\Chapter03</Filter>
     </ClCompile>
     <ClCompile Include="Example.cpp">
-      <Filter>Source\Lesson\Chapter04</Filter>
+      <Filter>Source Files\Lesson\Chapter04</Filter>
     </ClCompile>
     <ClCompile Include="Array.cpp">
-      <Filter>Source\Lesson\Chapter05</Filter>
+      <Filter>Source Files\Lesson\Chapter05</Filter>
     </ClCompile>
     <ClCompile Include="String.cpp">
-      <Filter>Source\Lesson\Chapter06</Filter>
+      <Filter>Source Files\Lesson\Chapter06</Filter>
     </ClCompile>
     <ClCompile Include="Structure.cpp">
-      <Filter>Source\Lesson\Chapter07</Filter>
+      <Filter>Source Files\Lesson\Chapter07</Filter>
     </ClCompile>
     <ClCompile Include="Pointer.cpp">
-      <Filter>Source\Lesson\Chapter08</Filter>
+      <Filter>Source Files\Lesson\Chapter08</Filter>
     </ClCompile>
     <ClCompile Include="Dynamic.cpp">
-      <Filter>Source\Lesson\Chapter09</Filter>
+      <Filter>Source Files\Lesson\Chapter09</Filter>
     </ClCompile>
     <ClCompile Include="MiniProject.cpp">
-      <Filter>Source\Lesson\Chapter99</Filter>
+      <Filter>Source Files\Lesson\Chapter99</Filter>
     </ClCompile>
     <ClCompile Include="ScissorsRockPaper.cpp">
-      <Filter>Source\Game\ScissorsRockPaper</Filter>
+      <Filter>Source Files\Game\ScissorsRockPaper</Filter>
     </ClCompile>
     <ClCompile Include="Lotto.cpp">
-      <Filter>Source\Game\Lotto</Filter>
+      <Filter>Source Files\Game\Lotto</Filter>
     </ClCompile>
     <ClCompile Include="Baseball.cpp">
-      <Filter>Source\Game\Baseball</Filter>
+      <Filter>Source Files\Game\Baseball</Filter>
     </ClCompile>
     <ClCompile Include="Class.cpp">
-      <Filter>Source\Lesson\Chapter10</Filter>
+      <Filter>Source Files\Lesson\Chapter10</Filter>
     </ClCompile>
     <ClCompile Include="ArrayClass.cpp">
-      <Filter>Source\Lesson\Chapter11</Filter>
+      <Filter>Source Files\Lesson\Chapter11</Filter>
     </ClCompile>
     <ClCompile Include="StringClass.cpp">
-      <Filter>Source\Lesson\Chapter12</Filter>
+      <Filter>Source Files\Lesson\Chapter12</Filter>
     </ClCompile>
     <ClCompile Include="VectorClass.cpp">
-      <Filter>Source\Lesson\Chapter13</Filter>
+      <Filter>Source Files\Lesson\Chapter13</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualFunction.cpp">
+      <Filter>Source Files\Lesson\Chapter14</Filter>
+    </ClCompile>
+    <ClCompile Include="PureVirtualFunction.cpp">
+      <Filter>Source Files\Lesson\Chapter15</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
-      <Filter>Source</Filter>
+      <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Problem.h">
-      <Filter>Source\Problem</Filter>
+      <Filter>Source Files\Problem</Filter>
     </ClInclude>
     <ClInclude Include="Variable.h">
-      <Filter>Source\Lesson\Chapter01</Filter>
+      <Filter>Source Files\Lesson\Chapter01</Filter>
     </ClInclude>
     <ClInclude Include="Operation.h">
-      <Filter>Source\Lesson\Chapter02</Filter>
+      <Filter>Source Files\Lesson\Chapter02</Filter>
     </ClInclude>
     <ClInclude Include="Statement.h">
-      <Filter>Source\Lesson\Chapter03</Filter>
+      <Filter>Source Files\Lesson\Chapter03</Filter>
     </ClInclude>
     <ClInclude Include="Example.h">
-      <Filter>Source\Lesson\Chapter04</Filter>
+      <Filter>Source Files\Lesson\Chapter04</Filter>
     </ClInclude>
     <ClInclude Include="Array.h">
-      <Filter>Source\Lesson\Chapter05</Filter>
+      <Filter>Source Files\Lesson\Chapter05</Filter>
     </ClInclude>
     <ClInclude Include="String.h">
-      <Filter>Source\Lesson\Chapter06</Filter>
+      <Filter>Source Files\Lesson\Chapter06</Filter>
     </ClInclude>
     <ClInclude Include="Structure.h">
-      <Filter>Source\Lesson\Chapter07</Filter>
+      <Filter>Source Files\Lesson\Chapter07</Filter>
     </ClInclude>
     <ClInclude Include="MiniProject.h">
-      <Filter>Source\Lesson\Chapter99</Filter>
+      <Filter>Source Files\Lesson\Chapter99</Filter>
     </ClInclude>
     <ClInclude Include="Pointer.h">
-      <Filter>Source\Lesson\Chapter08</Filter>
+      <Filter>Source Files\Lesson\Chapter08</Filter>
     </ClInclude>
     <ClInclude Include="Dynamic.h">
-      <Filter>Source\Lesson\Chapter09</Filter>
+      <Filter>Source Files\Lesson\Chapter09</Filter>
     </ClInclude>
     <ClInclude Include="ScissorsRockPaper.h">
-      <Filter>Source\Game\ScissorsRockPaper</Filter>
+      <Filter>Source Files\Game\ScissorsRockPaper</Filter>
     </ClInclude>
     <ClInclude Include="Lotto.h">
-      <Filter>Source\Game\Lotto</Filter>
+      <Filter>Source Files\Game\Lotto</Filter>
     </ClInclude>
     <ClInclude Include="Baseball.h">
-      <Filter>Source\Game\Baseball</Filter>
+      <Filter>Source Files\Game\Baseball</Filter>
     </ClInclude>
     <ClInclude Include="Class.h">
-      <Filter>Source\Lesson\Chapter10</Filter>
+      <Filter>Source Files\Lesson\Chapter10</Filter>
     </ClInclude>
     <ClInclude Include="ArrayClass.h">
-      <Filter>Source\Lesson\Chapter11</Filter>
+      <Filter>Source Files\Lesson\Chapter11</Filter>
     </ClInclude>
     <ClInclude Include="StringClass.h">
-      <Filter>Source\Lesson\Chapter12</Filter>
+      <Filter>Source Files\Lesson\Chapter12</Filter>
     </ClInclude>
     <ClInclude Include="VectorClass.h">
-      <Filter>Source\Lesson\Chapter13</Filter>
+      <Filter>Source Files\Lesson\Chapter13</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualFunction.h">
+      <Filter>Source Files\Lesson\Chapter14</Filter>
+    </ClInclude>
+    <ClInclude Include="PureVirtualFunction.h">
+      <Filter>Source Files\Lesson\Chapter15</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

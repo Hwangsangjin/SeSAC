@@ -14,6 +14,7 @@
 #include "StringClass.h"
 #include "VectorClass.h"
 #include "VirtualFunction.h"
+#include "PureVirtualFunction.h"
 #include "MiniProject.h"
 #include "ScissorsRockPaper.h"
 #include "Lotto.h"

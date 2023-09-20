@@ -2,7 +2,7 @@
 
 int main()
 {
-	VirtualFunction();
+	PureVirtualFunction();
 
 	return 0;
 }
