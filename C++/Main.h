@@ -13,7 +13,9 @@
 #include "ArrayClass.h"
 #include "StringClass.h"
 #include "VectorClass.h"
+#include "VirtualFunction.h"
 #include "MiniProject.h"
 #include "ScissorsRockPaper.h"
 #include "Lotto.h"
 #include "Baseball.h"
+

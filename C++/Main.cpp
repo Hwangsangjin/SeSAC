@@ -2,7 +2,7 @@
 
 int main()
 {
-	VectorClass();
-		
+	VirtualFunction();
+
 	return 0;
 }
