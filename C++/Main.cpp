@@ -2,7 +2,7 @@
 
 int main()
 {
-	PureVirtualFunction();
+	Template();
 
 	return 0;
 }
