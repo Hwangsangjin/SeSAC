@@ -32,9 +32,6 @@
     <Filter Include="Source Files\Lesson\Chapter07">
       <UniqueIdentifier>{26d53bdc-7976-4b99-b5ca-f54ad8d10741}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Lesson\Chapter99">
-      <UniqueIdentifier>{d9962682-e07e-4f78-92d5-33bdb800cfd9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Lesson\Chapter08">
       <UniqueIdentifier>{d128eaf7-b1e4-4b59-ba9c-34c77f38d076}</UniqueIdentifier>
     </Filter>
@@ -70,6 +67,12 @@
     </Filter>
     <Filter Include="Source Files\Lesson\Chapter15">
       <UniqueIdentifier>{ac3d607c-2d7f-4754-9ef2-e64b6699468a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lesson\Chapter16">
+      <UniqueIdentifier>{2460290d-041d-428a-a067-e254641c455d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lesson\Chapter00">
+      <UniqueIdentifier>{d9962682-e07e-4f78-92d5-33bdb800cfd9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -125,7 +128,7 @@
       <Filter>Source Files\Lesson\Chapter09</Filter>
     </ClCompile>
     <ClCompile Include="MiniProject.cpp">
-      <Filter>Source Files\Lesson\Chapter99</Filter>
+      <Filter>Source Files\Lesson\Chapter00</Filter>
     </ClCompile>
     <ClCompile Include="ScissorsRockPaper.cpp">
       <Filter>Source Files\Game\ScissorsRockPaper</Filter>
@@ -153,6 +156,9 @@
     </ClCompile>
     <ClCompile Include="PureVirtualFunction.cpp">
       <Filter>Source Files\Lesson\Chapter15</Filter>
+    </ClCompile>
+    <ClCompile Include="Template.cpp">
+      <Filter>Source Files\Lesson\Chapter16</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -184,7 +190,7 @@
       <Filter>Source Files\Lesson\Chapter07</Filter>
     </ClInclude>
     <ClInclude Include="MiniProject.h">
-      <Filter>Source Files\Lesson\Chapter99</Filter>
+      <Filter>Source Files\Lesson\Chapter00</Filter>
     </ClInclude>
     <ClInclude Include="Pointer.h">
       <Filter>Source Files\Lesson\Chapter08</Filter>
@@ -218,6 +224,9 @@
     </ClInclude>
     <ClInclude Include="PureVirtualFunction.h">
       <Filter>Source Files\Lesson\Chapter15</Filter>
+    </ClInclude>
+    <ClInclude Include="Template.h">
+      <Filter>Source Files\Lesson\Chapter16</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
