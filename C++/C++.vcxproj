@@ -131,6 +131,7 @@
     <ClCompile Include="Baseball.cpp" />
     <ClCompile Include="Class.cpp" />
     <ClCompile Include="Dynamic.cpp" />
+    <ClCompile Include="Problem8.cpp" />
     <ClCompile Include="Lotto.cpp" />
     <ClCompile Include="MiniProject.cpp" />
     <ClCompile Include="Pointer.cpp" />

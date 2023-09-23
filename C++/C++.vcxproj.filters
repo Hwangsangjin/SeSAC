@@ -169,6 +169,9 @@
     <ClCompile Include="Problem7.cpp">
       <Filter>Source Files\Problem</Filter>
     </ClCompile>
+    <ClCompile Include="Problem8.cpp">
+      <Filter>Source Files\Problem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
