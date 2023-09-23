@@ -138,6 +138,7 @@
     <ClCompile Include="ScissorsRockPaper.cpp" />
     <ClCompile Include="StringClass.cpp" />
     <ClCompile Include="Template.cpp" />
+    <ClCompile Include="TowerOfHanoi.cpp" />
     <ClCompile Include="Variable.cpp" />
     <ClCompile Include="Operation.cpp" />
     <ClCompile Include="Statement.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="ScissorsRockPaper.h" />
     <ClInclude Include="StringClass.h" />
     <ClInclude Include="Template.h" />
+    <ClInclude Include="TowerOfHanoi.h" />
     <ClInclude Include="Variable.h" />
     <ClInclude Include="Operation.h" />
     <ClInclude Include="Statement.h" />

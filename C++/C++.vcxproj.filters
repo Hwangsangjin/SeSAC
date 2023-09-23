@@ -74,6 +74,9 @@
     <Filter Include="Source Files\Lesson\Chapter00">
       <UniqueIdentifier>{d9962682-e07e-4f78-92d5-33bdb800cfd9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Game\TowerOfHanoi">
+      <UniqueIdentifier>{a4ba95b4-360f-43a6-8696-85f1a271b0c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -160,6 +163,9 @@
     <ClCompile Include="Template.cpp">
       <Filter>Source Files\Lesson\Chapter16</Filter>
     </ClCompile>
+    <ClCompile Include="TowerOfHanoi.cpp">
+      <Filter>Source Files\Game\TowerOfHanoi</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -227,6 +233,9 @@
     </ClInclude>
     <ClInclude Include="Template.h">
       <Filter>Source Files\Lesson\Chapter16</Filter>
+    </ClInclude>
+    <ClInclude Include="TowerOfHanoi.h">
+      <Filter>Source Files\Game\TowerOfHanoi</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

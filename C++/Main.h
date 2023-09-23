@@ -20,4 +20,5 @@
 #include "ScissorsRockPaper.h"
 #include "Lotto.h"
 #include "Baseball.h"
+#include "TowerOfHanoi.h"
 

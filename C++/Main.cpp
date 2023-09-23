@@ -2,7 +2,7 @@
 
 int main()
 {
-	Template();
+	TowerOfHanoi();
 
 	return 0;
 }
