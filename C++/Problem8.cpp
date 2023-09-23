@@ -40,7 +40,7 @@ P/F 과목의 경우 등급이 P또는 F로 표시되는데, 등급이 P인 과�
 void Problem8()
 {
 	// 과목평점표
-	map<string, float> Grades
+	map<string, double> Grades
 	{
 		{ "A+", 4.5},
 		{ "A0", 4.0},
@@ -56,9 +56,9 @@ void Problem8()
 	// 과목, 등급
 	string Subject, Rating;
 	// 전공과목별 합
-	float Sum = 0.0;
+	double Sum = 0.0;
 	// 학점, 총학점
-	float Credit, Total = 0.0;
+	double Credit, Total = 0.0;
 
 	for (int i = 0; i < 20; i++)
 	{
