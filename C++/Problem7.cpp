@@ -26,7 +26,7 @@ N, K가 주어졌을 때, K번째 지우는 수를 구하는 프로그램을 작
 
 void Problem7()
 {
-	cout << "정수의 개수와 지우고 싶은 개수: ";
+	cout << "정수의 마지막 숫자와 지우고 싶은 개수: ";
 
 	long long int N, K;
 	cin >> N >> K;
@@ -57,7 +57,7 @@ void Problem7()
 				// 지워진 개수가 K와 같은 경우 출력
 				if (Count == K)
 				{
-					cout << j;
+					cout << K <<"번째 지우는 수: " << j;
 					return;
 				}
 			}
