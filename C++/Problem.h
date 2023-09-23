@@ -7,3 +7,4 @@ int Problem3();
 void Problem4();
 bool Problem5();
 int Problem6();
+void Problem7();

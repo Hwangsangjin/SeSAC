@@ -166,6 +166,9 @@
     <ClCompile Include="TowerOfHanoi.cpp">
       <Filter>Source Files\Game\TowerOfHanoi</Filter>
     </ClCompile>
+    <ClCompile Include="Problem7.cpp">
+      <Filter>Source Files\Problem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">

@@ -25,6 +25,7 @@ void Problem()
 		cout << "4. 7게임\n";
 		cout << "5. 간단한 논리 연산\n";
 		cout << "6. 주사위 게임 3\n";
+		cout << "7. 에라토스테네스의 체\n";
 		cout << "0. 프로그램 종료\n";
 		cout << ">> ";
 
@@ -95,6 +96,13 @@ void Problem()
 			int Score;
 			Score = IntFPtr();
 			cout << "점수: " << Score << "\n\n";
+			system("pause");
+			system("cls");
+			break;
+		case 7:
+			VoidFPtr = Problem7;
+			VoidFPtr();
+			cout << "\n\n";
 			system("pause");
 			system("cls");
 			break;
